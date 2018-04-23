@@ -207,6 +207,7 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
         const {url} = props.contentState.getEntity(props.entityKey).getData();
         return (
           <a href={url} style={styles.link}>
+            <img src={url} />
             {props.children}
           </a>
         );
